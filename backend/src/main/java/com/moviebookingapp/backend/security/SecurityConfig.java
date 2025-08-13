@@ -35,7 +35,9 @@ public class SecurityConfig {
                 .requestMatchers("/h2-console/**").permitAll()
                 .requestMatchers("/api/auth/**").permitAll()
                 .requestMatchers("/api/admin/auth/**").permitAll()  // Allow admin auth endpoints
-                .requestMatchers("/actuator/health").permitAll()  // Allow health checks for Railway
+                .requestMatchers("/actuator/health").permitAll()  // Allow actuator health checks
+                .requestMatchers("/health").permitAll()  // Allow custom health endpoint for Railway
+                .requestMatchers("/").permitAll()  // Allow root endpoint
                 .requestMatchers(HttpMethod.GET, "/api/movies/**").permitAll()
                 .requestMatchers(HttpMethod.GET, "/api/showtimes/**").permitAll()
                 .requestMatchers(HttpMethod.GET, "/api/seats/**").permitAll()

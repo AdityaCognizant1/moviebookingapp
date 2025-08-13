@@ -1,0 +1,19 @@
+RAILWAY ENVIRONMENT VARIABLES TO SET:
+
+1. SPRING_PROFILES_ACTIVE=prod
+2. JWT_SECRET=premium-cinema-booking-jwt-secret-key-256-bits-long-for-production-security-2024
+3. CORS_ORIGINS=https://premium-cinema-booking.windsurf.build
+4. APP_LOAD_SAMPLE_DATA=auto
+
+COPY THESE EXACT VALUES INTO RAILWAY:
+- Variable Name: SPRING_PROFILES_ACTIVE
+- Variable Value: prod
+
+- Variable Name: JWT_SECRET  
+- Variable Value: premium-cinema-booking-jwt-secret-key-256-bits-long-for-production-security-2024
+
+- Variable Name: CORS_ORIGINS
+- Variable Value: https://premium-cinema-booking.windsurf.build
+
+- Variable Name: APP_LOAD_SAMPLE_DATA
+- Variable Value: auto

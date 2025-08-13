@@ -1,0 +1,14 @@
+NETLIFY ENVIRONMENT VARIABLES UPDATE:
+
+After Railway deployment completes:
+
+1. Go to Netlify Dashboard
+2. Navigate to: Sites → premium-cinema-booking → Site Settings → Environment Variables
+3. Add/Update these variables:
+
+REACT_APP_API_URL=https://your-railway-app-name.railway.app/api
+REACT_APP_USE_MOCK=false
+
+4. Click "Deploy site" to redeploy with new backend connection
+
+REPLACE "your-railway-app-name" with your actual Railway app URL!

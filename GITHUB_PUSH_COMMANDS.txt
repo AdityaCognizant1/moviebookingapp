@@ -1,0 +1,22 @@
+GITHUB PUSH COMMANDS:
+
+After creating your GitHub repository, run these commands in PowerShell:
+
+1. Add GitHub remote (replace YOUR_USERNAME with your GitHub username):
+git remote add origin https://github.com/YOUR_USERNAME/moviebookingapp.git
+
+2. Push to GitHub:
+git branch -M main
+git push -u origin main
+
+EXAMPLE (replace YOUR_USERNAME):
+git remote add origin https://github.com/YOUR_USERNAME/moviebookingapp.git
+git branch -M main  
+git push -u origin main
+
+After pushing successfully, your repository will contain:
+✅ Backend (Spring Boot with PostgreSQL support)
+✅ Frontend (React with premium UI)
+✅ Deployment configurations (Railway, Netlify)
+✅ Documentation (README, deployment guides)
+✅ All sample data and features

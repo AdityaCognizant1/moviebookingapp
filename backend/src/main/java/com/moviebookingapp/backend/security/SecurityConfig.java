@@ -38,6 +38,7 @@ public class SecurityConfig {
                 .requestMatchers("/actuator/health").permitAll()  // Allow actuator health checks
                 .requestMatchers("/health").permitAll()  // Allow custom health endpoint for Railway
                 .requestMatchers("/").permitAll()  // Allow root endpoint
+                .requestMatchers("/debug/**").permitAll()  // Allow debug endpoints
                 .requestMatchers(HttpMethod.GET, "/api/movies/**").permitAll()
                 .requestMatchers(HttpMethod.GET, "/api/showtimes/**").permitAll()
                 .requestMatchers(HttpMethod.GET, "/api/seats/**").permitAll()
